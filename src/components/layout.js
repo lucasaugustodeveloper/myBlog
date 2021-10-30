@@ -1,9 +1,16 @@
 import React from "react"
 
+import Profile from './profile'
+
 const Layout = ({ children }) => {
   return (
     <div>
-      <main>{children}</main>
+      <main>
+        <aside>
+          <Profile />
+        </aside>
+        {children}
+      </main>
     </div>
   )
 }

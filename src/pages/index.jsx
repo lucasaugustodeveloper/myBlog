@@ -1,16 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const HomePage = () => (
-  <div>
-    <h1>Home Page</h1>
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 
-    <ul>
-      <li>
-        <Link to='about'>About</Link>
-      </li>
-    </ul>
-  </div>
+const HomePage = () => (
+  <Layout>
+    <Seo title="Home" />
+    <h1>Home Page</h1>
+  </Layout>
 )
 
 export default HomePage
